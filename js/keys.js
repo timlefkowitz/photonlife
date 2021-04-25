@@ -1,5 +1,5 @@
-var mapboxtoken = "pk.eyJ1IjoidGltb3RoeWxlZmtvd2l0eiIsImEiOiJja25ham5vNDMxaWJjMnZsZ2RiOHpyd3Z4In0._djH9icZ5-VN_k6R9r69ug"
+var mapboxtoken = "pk.eyJ1IjoidGltb3RoeWxlZmtvd2l0eiIsImEiOiJja254c2czdDAxMzBkMm5sZ2JoMGJqN2wwIn0.sNAwC2N6rcnlklZDMAGZuQ"
 
-var OPEN_WEATHER_APPID = "d08a73d83534c3d0250817519765b1a5";
+var OPEN_WEATHER_APPID = "41aa3b924b08e72508c32d94379e8da3";
 
 var gittoken = "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";
