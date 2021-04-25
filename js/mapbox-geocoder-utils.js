@@ -41,6 +41,7 @@ console.log(geocode());
  *
  */
 function reverseGeocode(coordinates, token) {
+    console.log("reverse is working")
     var baseUrl = 'https://api.mapbox.com';
     var endPoint = '/geocoding/v5/mapbox.places/';
     return fetch(baseUrl + endPoint + coordinates.lng + "," + coordinates.lat + '.json' + "?" + 'access_token=' + token)
