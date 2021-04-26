@@ -64,14 +64,21 @@
         "use strict";
 
         window.onload = function() {
+            console.log("HEllo")
+
+            $(document).ready(function() {
+                $("#day1").append("<a class=\"day1 text-center day1\" id=\"day1\">day1 bitches</a>");
+            });
 
             var weatherlist = [];
             console.log(weatherlist);
 
             var day1 = $(document).ready(function(){
+                $("#day1").append("<a class=\"day1 text-center day1\" id=\"day1\">day1 bitches</a>")
                 console.log("GIVE ME 5 DAYS");
                 $(".dayone");
             })
+
 
             var day2 = $(document).ready(function(){
                 console.log("GIVE ME 5 DAYS");
@@ -137,7 +144,7 @@
         <div class="col">
             <div class="card" style="width: 10rem;">
                 <div class="card-header">
-                    <a class="day1 text-center day1">10-16-1988</a>
+                    <a class="day1 text-center day1" id="day1">10-16-1988</a>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item desc">Description:</li>

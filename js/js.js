@@ -30,7 +30,7 @@ $(document).ready(function(){
         "\n" +
         "\n" +
         "                    <li class=\"nav-item\">\n" +
-        "                        <a class=\"nav-link active mr-auto\" aria-current=\"page\" href=\"/3d.html\">3D Realms</a>\n" +
+        "                        <a class=\"nav-link active mr-auto\" aria-current=\"3d.html\" href=\"3d.html\">3D Realms</a>\n" +
         "                    </li>\n" +
         "\n" +
         "\n" +
