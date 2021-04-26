@@ -6,7 +6,7 @@ $(document).ready(function(){
     // NAV bar
     $("#jnavbar").html("    <nav is=\"jnavbar\" class=\"navbar navbar-expand-lg navbar-light bg-light\">\n" +
         "        <div class=\"container-fluid\">\n" +
-        "            <a class=\"navbar-brand\" href=\"#\">PhotonLife</a>\n" +
+        "            <a class=\"navbar-brand\" href=\"index.html\">PhotonLife</a>\n" +
         "            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
         "                <span class=\"navbar-toggler-icon\"></span>\n" +
         "            </button>\n" +
@@ -22,7 +22,7 @@ $(document).ready(function(){
         "                            Code / {programming}\n" +
         "                        </a>\n" +
         "                        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n" +
-        "                            <a class=\"dropdown-item\" href=\"#\">WeatherMap</a>\n" +
+        "                            <a class=\"dropdown-item\" href=\"weathermap.html\">WeatherMap</a>\n" +
         "                            <a class=\"dropdown-item\" href=\"#\">Tims Favorite Foods</a>\n" +
         "                            <a class=\"dropdown-item\" href=\"#\">Coffee Shop Project</a>\n" +
         "                        </div>\n" +
@@ -35,11 +35,11 @@ $(document).ready(function(){
         "\n" +
         "\n" +
         "                    <li class=\"nav-item\">\n" +
-        "                        <a class=\"nav-link\" href=\"/flickarchive.html\">Photographic Archive</a>\n" +
+        "                        <a class=\"nav-link\" href=\"flickarchive.html\">Photographic Archive</a>\n" +
         "                    </li>\n" +
         "\n" +
         "                    <li class=\"nav-item\">\n" +
-        "                        <a class=\"nav-link\" href=\"/contact.html\">Contact / Resume </a>\n" +
+        "                        <a class=\"nav-link\" href=\"contact.html\">Contact / Resume </a>\n" +
         "                    </li>\n" +
         "\n" +
         "\n" +
