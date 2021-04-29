@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/timlefkowitz.github.io.iml" filepath="$PROJECT_DIR$/.idea/timlefkowitz.github.io.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/PhotonLife.iml" filepath="$PROJECT_DIR$/PhotonLife.iml" />
+>>>>>>> 8a2075c391c10bcf5ca9a4cb2f44ecbe41d42fcd
     </modules>
   </component>
 </project>

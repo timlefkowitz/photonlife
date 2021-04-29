@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photon Life</title>
+
+    <!-- BootStrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="stylesheet/styles.css">
+
+    <!--- J Query -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- NAV BAR -->
+<div id="jnavbar"></div>
+
+<!-- Media panel -->
+<!--<div class="container d-flex justify-content-center mediacontainer flavoursContainer">-->
+<!--    <img src="img/photonlife.png">-->
+<!--</div>-->
+
+<div class="container">
+    <!-- code here -->
+    <div class="text-box">
+        <h1>🍔 Tims Food Picks 🌮</h1>
+    </div>
+</div>
+<div class="map">
+    <div id='map' style='width: 100%; height: 600px;'></div>
+</div>
+<script>
+    mapboxgl.accessToken = mapboxtoken;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-98.48, 29.45],
+        zoom:10,
+    });
+
+
+    //Yes we can set the zoom after the map is drawn
+    //map.setZoom(20);
+
+    // geocode("1414 S Alamo St, San Antonio, TX 78210", mapboxtoken).then(function(results){
+    //     console.log("Restaurant coordinates", results);
+    //     var marker = new mapboxgl.Marker()
+    //         .setLngLat(results)
+    //         .setPopup(new mapboxgl.Popup({ offset: 25 })
+    //         .setHTML('<a>Halcyon</a>'))
+    //         .addTo(map)
+    //
+    // })
+
+    //
+    // geocode("701 S St Mary's St, San Antonio, TX 78204", mapboxtoken).then(function(results){
+    //     console.log("Restaurant coordinates", results);
+    //     var marker = new mapboxgl.Marker()
+    //         .setLngLat(results)
+    //         .setPopup(new mapboxgl.Popup({ offset: 25 })
+    //             .setHTML('<a>Filling Station</a>'))
+    //         .addTo(map);
+    // })
+
+    //
+    //
+    // geocode("4025 Broadway, San Antonio, TX 78209", mapboxtoken).then(function(results){
+    //     console.log("Restaurant coordinates", results);
+    //     var marker = new mapboxgl.Marker()
+    //         .setLngLat(results)
+    //         .setPopup(new mapboxgl.Popup({ offset: 25 })
+    //             .setHTML('<a>Hayden</a>'))
+    //         .addTo(map);
+    //
+    // })
+
+    var favFoods =
+        [{
+            name: "The Hayden",
+            addr: "4025 Broadway, San Antonio, TX 78209",
+            contents: "<a>The Hayden</a>",
+        },
+            {
+                name: "The Filling Station",
+                addr: "701 S St Mary's St, San Antonio, TX 78204",
+                contents: "<a>The Filling Station</a>",
+            },
+            {
+                name: "Halcyon",
+                addr: "1414 S Alamo St, San Antonio, TX 78210",
+                contents: "<a>Halcyon</a>",
+            }]
+
+    console.log(favFoods);
+    for (var i = 0; i < favFoods.length; i++){
+        console.log(favFoods[i])
+        var favfoodContents = favFoods[i].contents;
+        geocode(favFoods[i].addr, mapboxtoken).then(function(results){
+            console.log("Restaurant coordinates", results);
+            var marker = new mapboxgl.Marker()
+                .setLngLat(results)
+                .setPopup(new mapboxgl.Popup({ offset: 25 })
+                    .setHTML(favfoodContents))
+                .addTo(map);
+
+        })
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--- Scripts --->
+
+<script src="js/js.js"></script>
+
+
+
+<!--Boot Strap -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
