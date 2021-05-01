@@ -1,60 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Photon Life</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+
+
+    <!--- J Query -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 
     <!-- BootStrap -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
     <!-- StyleSheet -->
     <link rel="stylesheet" href="stylesheet/styles.css">
 
-    <!--- J Query -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+
+
 <body>
     <!-- NAV BAR -->
     <div id="jnavbar"></div>
 
+
+
+
+
     <!-- Media panel -->
-    <div class="container d-flex justify-content-center mediacontainer flavoursContainer">
-        <img src="img/photonlife.png">
+<!--    <div class="container d-flex justify-content-center mediacontainer flavoursContainer">-->
+<!--        <img src="img/photonlife.png">-->
+<!--    </div>-->
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+
+            </div>
+            <div class="col-9 text-center">
+                <p id="demo"></p>
+<!--                <h1>Timothy Lefkowitz</h1>-->
+<!--                <p>210.202.7013</p>-->
+<!--                <p>timothy.lefkowitz@gmail.com</p>-->
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+    <p></p>
+    <br>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="card" style="width: 20rem;">
+                <!--                    <img src="..." class="card-img-top" alt="...">-->
+                <span class="oi oi-aperture"></span>
+                <div class="card-body mt-3 text-center">
+                    <h5 class="card-title"><kbd>CODE /{programming}</kbd></h5>
+                    <p class="card-text"> <samp>Currently graduating CodeUp a Full Stack Development program, here is some of my work</samp></p>
+                    <a href="#" class="btn btn-info">Projects</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 20rem;">
+                <!--                    <img src="..." class="card-img-top" alt="...">-->
+                <span class="oi oi-aperture"></span>
+                <div class="card-body mt-3 text-center">
+                    <h5 class="card-title"><kbd>Photographic Archive </kbd></h5>
+                    <p class="card-text"> <samp>One of my main passion's in life has been vision, Through film and photography, we can capture light/vision and time</samp></p>
+                    <a href="#" class="btn btn-info">Archive</a>
+                </div>
+            </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="card" style="width: 20rem;">
+                <!--                    <img src="..." class="card-img-top" alt="...">-->
+                <span class="oi oi-aperture"></span>
+                <div class="card-body mt-3 text-center">
+                    <h5 class="card-title"><kbd>3d Realms</kbd></h5>
+                    <p class="card-text"> <samp>Relaxation has become and important aspect of life, Explore different worlds</samp></p>
+                    <a href="#" class="btn btn-info">3D Archive</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 20rem;">
+                <!--                    <img src="..." class="card-img-top" alt="...">-->
+                <span class="oi oi-aperture"></span>
+                <div class="card-body mt-3 text-center">
+                    <h5 class="card-title"><kbd>Contact</kbd></h5>
+                    <p class="card-text"> <samp>I love a email or phone call</samp></p>
+                    <a href="#" class="btn btn-info">Contact</a>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
 
+    <p></p>
+    <p></p>
+    <script>
+        var i = 0;
+        var txt = 'Hello, My name is Timothy Craig Lefkowitz.\n Texas raised Developer, \n Photographer, \n Computer Geek and Adventurer. This is some of my work.'; /* The text */
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+    </script>
 
 
 
 
 
+    <!--- Scripts --->
 
 
 
+    <!--Boot Strap -->
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/js.js"></script>
 
 
-
-
-
-<!--- Scripts --->
-
-<script src="js/js.js"></script>
-
-
-
-        <!--Boot Strap -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 </body>
