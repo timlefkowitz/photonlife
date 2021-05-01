@@ -1,0 +1,73 @@
+#jnavbar{
+    /*display:flex;*/
+    /*justify-content: center;*/
+    font-size: 15px !important;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    /*border: 5px solid red;*/
+}
+
+.navbar{
+
+    font-size: 10px !important;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.codecard {
+    margin-right:5em;
+}
+
+/*.calltojustify{*/
+/*    justify-content: end !important;*/
+/*}*/
+
+.rowone{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/*.cards{*/
+/*    margin-top: 10%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+.boxes{
+    margin-top:10%;
+    justify-content: center;
+}
+
+#demo{
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.textarea{
+    margin-top: 10%;
+}
+
+div {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size:10px;
+    font-weight: 600;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    padding-top:65px;
+}
+
+.mediacontainer img{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 300px !important;
+    /*border: 5px solid red;*/
+}
+.ml3 {
+    font-weight: 900;
+    font-size: 1.5em;
+}
