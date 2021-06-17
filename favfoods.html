@@ -26,6 +26,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
 </head>
 
 <!---- MapBOX CDN ----->
@@ -66,6 +70,10 @@
 
     }
 
+    .container{
+        margin-top: 1.7%;
+    }
+
 
 </style>
 
@@ -99,87 +107,96 @@
     });
 
 
-    //Yes we can set the zoom after the map is drawn
-    //map.setZoom(20);
 
-    // geocode("1414 S Alamo St, San Antonio, TX 78210", mapboxtoken).then(function(results){
-    //     console.log("Restaurant coordinates", results);
-    //     var marker = new mapboxgl.Marker()
-    //         .setLngLat(results)
-    //         .setPopup(new mapboxgl.Popup({ offset: 25 })
-    //         .setHTML('<a>Halcyon</a>'))
-    //         .addTo(map)
-    //
-    // })
+    function Foods(){
 
-    //
-    // geocode("701 S St Mary's St, San Antonio, TX 78204", mapboxtoken).then(function(results){
-    //     console.log("Restaurant coordinates", results);
-    //     var marker = new mapboxgl.Marker()
-    //         .setLngLat(results)
-    //         .setPopup(new mapboxgl.Popup({ offset: 25 })
-    //             .setHTML('<a>Filling Station</a>'))
-    //         .addTo(map);
-    // })
-
-    //
-    //
-    // geocode("4025 Broadway, San Antonio, TX 78209", mapboxtoken).then(function(results){
-    //     console.log("Restaurant coordinates", results);
-    //     var marker = new mapboxgl.Marker()
-    //         .setLngLat(results)
-    //         .setPopup(new mapboxgl.Popup({ offset: 25 })
-    //             .setHTML('<a>Hayden</a>'))
-    //         .addTo(map);
-    //
-    // })
-
-    var favFoods =
-        [
-            {
-            name: "The Hayden",
-            addr: "4025 Broadway, San Antonio, TX 78209",
-            contents: "<a>The Hayden</a>",
-        },
-            {
-                name: "The Filling Station",
-                addr: "701 S St Mary's St, San Antonio, TX 78204",
-                contents: "<a>The Filling Station</a>",
-            },
-            {
-                name: "Cullum's Attagirl Ice House",
-                addr: "726 E Mistletoe Ave, San Antonio, TX 78212",
-                contents: "Cullum's Attagirl Ice House",
-            },
-            {
-                name: "Burger Boy",
-                addr: "726 E Mistletoe Ave, San Antonio, TX 78212",
-                contents: "Burger Boy",
-            },
-            {
-                name: "Halcyon",
-                addr: "1414 S Alamo St, San Antonio, TX 78210",
-                contents: "Halcyon",
-            }
-            ]
-
-    console.log(favFoods);
-
-    for (var i = 0; i < favFoods.length; i++){
-        console.log(favFoods[i])
-
-        var favfoodContents = favFoods[i].contents;
-
-
-        geocode(favFoods[i].addr, mapboxtoken).then(function(results){
-            console.log("Restaurant coordinates", results);
-            var marker = new mapboxgl.Marker()
-                .setLngLat(results)
-                .setPopup(new mapboxgl.Popup({ offset: 25 })
-                    .setHTML(favfoodContents))
-                .addTo(map);
-
+        var midTownBistro = new mapboxgl.Popup(popupOptions)
+            .setHTML("<p>\t\n" +
+                "MidTown Bistro has some of the best fries around. </p>"+"<h6>Contact Number</h6><a href=\"tel:210-857-4518\">210-857-4518<i class=\"material-icons\" style=\"font-size:30px;color:black;\">phone</i></a>");
+        var marker = new mapboxgl.Marker({
+            color: "#ff601c",
+            draggable: false
         })
+            .setLngLat([-98.468405, 29.460158])
+            .addTo(map)
+            .setPopup(midTownBistro);
+
+    }
+
+
+    Foods();
+
+    function vetOwned(){
+
+        var popup1Cybersecurity = new mapboxgl.Popup(popupOptions)
+            .setHTML("<i class=\"material-icons\" style=\"font-size:30px;color:#115A07;\">flag</i><h6>la Madeleine French Bakery & Cafe</h6><p>\t\n" +
+                "I know, It's kinda a chain. I can't help it I love La Madeleine </p>"+"<h6>Contact Number</h6><a href=\"tel:+2108297291\">+12108297291<i class=\"material-icons\" style=\"font-size:30px;color:black;\">phone</i></a>");
+        var marker = new mapboxgl.Marker({
+            color: "#ff601c",
+            draggable: false
+        })
+            .setLngLat([-98.463089, 29.471085])
+            .addTo(map)
+            .setPopup(popup1Cybersecurity);
+
+
+
+
+        var popup1iApparel = new mapboxgl.Popup(popupOptions)
+            .setHTML("<i class=\"material-icons\" style=\"font-size:30px;color:#115A07;\">flag</i><h6>Cullum's Attagirl Ice House</h6><p>Hands down the best wings I've had. I didn't know I liked wings until I had Attagirls wings!</p>"+"<h6>Contact Number</h6><a href=\"tel:+210-807-8777\">+1210-807-8777<i class=\"material-icons\" style=\"font-size:30px;color:black;\">phone</i></a>");
+        var marker = new mapboxgl.Marker({
+            color: "#ff601c",
+            draggable: false
+        })
+            .setLngLat([-98.484918, 29.453307])
+            .addTo(map)
+            .setPopup(popup1iApparel);
+
+
+        var popupSecurity = new mapboxgl.Popup(popupOptions)
+            .setHTML("<i class=\"material-icons\" style=\"font-size:30px;color:#115A07;\">flag</i><h6>Southerleigh Fine Food and Brewery</h6><p>Some of the best food from the south I've ever had!</p>"+"<h6>Contact Number</h6><a href=\"tel:+12104555701\">+12104555701<i class=\"material-icons\" style=\"font-size:30px;color:black;\">phone</i></a>");
+        var marker = new mapboxgl.Marker({
+            color: "#ff601c",
+            draggable: false
+        })
+            .setLngLat([-98.480506,29.442585])
+            .addTo(map)
+            .setPopup(popupSecurity);
+
+
+
+        var popupTech = new mapboxgl.Popup(popupOptions)
+            .setHTML("<i class=\"material-icons\" style=\"font-size:30px;color:#115A07;\">flag</i><h6>Halcyon and Stella</h6><p>Halcyon has some of the best chicken and mac, plates ever and it's only five dollars!</p>"+"<h6>Contact Number</h6><a href=\"tel:+12102277047\">+1+2102777047<i class=\"material-icons\" style=\"font-size:30px;color:black;\">phone</i></a>");
+        var marker = new mapboxgl.Marker({
+            color: "#ff601c",
+            draggable: false
+        })
+            .setLngLat([-98.495297, 29.410172])
+            .addTo(map)
+            .setPopup(popupSecurity);
+
+        currentMarkers.push(marker);
+
+
+    }
+
+    vetOwned();
+
+    mapboxgl.accessToken = mapboxtoken;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-98.48, 29.425],
+        zoom:12.5,
+    });
+
+    var markerOptions = {
+        color: "red",
+        scale: .9,
+    }
+
+    var popupOptions = {
+        anchor: "top",
     }
 
 
