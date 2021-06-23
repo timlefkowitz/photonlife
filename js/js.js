@@ -8,7 +8,7 @@ $(document).ready(function(){
         "        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo01\" aria-controls=\"navbarTogglerDemo01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
         "            <span class=\"navbar-toggler-icon\"></span>\n" +
         "        </button>\n" +
-        "        <a class=\"navbar-brand\" href=\"index.html\"><h1 class=\"ml3\"><img src="https://live.staticflickr.com/65535/51267888565_b667dedcc5_o.gif" width="48" height="48";>PhotonLife</h1>\n" +
+        "        <a class=\"navbar-brand\" href=\"index.html\"><h1 class=\"ml3\">PhotonLife</h1>\n" +
         "\n" +
         "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js\"></script></a>\n" +
         "        <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbarTogglerDemo01\">\n" +
