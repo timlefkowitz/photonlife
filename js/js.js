@@ -20,7 +20,9 @@ $(document).ready(function(){
         "                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n" +
         "                        Code / {programming}\n" +
         "                    </a>\n" +
-        "                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n" +
+        "                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">" +
+        "                        <a class=\"dropdown-item\" href=\"https://github.com/Space-Trader-Project/SpaceTrader/blob/main/README.md\">Help-Tank</a>\n" +
+        "                        <a class=\"dropdown-item\" href=\"https://github.com/Space-Trader-Project/SpaceTrader\">Space-Trader</a>\n" +
         "                        <a class=\"dropdown-item\" href=\"weathermap.html\">WeatherMap</a>\n" +
         "                        <a class=\"dropdown-item\" href=\"favfoods.html\">Tims Favorite Foods</a>\n" +
         "                        <a class=\"dropdown-item\" href=\"coffee.html\">Coffee Shop Project</a>\n" +
